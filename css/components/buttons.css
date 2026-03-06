@@ -1,0 +1,10 @@
+.btn-primary {
+  font-family: var(--text-secondary);
+  color: var(--color-text-light);
+  background-color: var(--color-btn-default);
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: var(--color-btn-active);
+  }
+}
