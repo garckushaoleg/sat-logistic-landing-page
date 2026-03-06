@@ -55,6 +55,7 @@ h6 {
 
 /* 9. Improve line wrapping */
 p {
+  font-family: var(--text-secondary);
   text-wrap: pretty;
 }
 h1,
@@ -86,4 +87,14 @@ li {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }

@@ -1,11 +1,12 @@
 :root {
   --color-text-dark: rgb(2, 58, 21);
   --color-text-light: rgb(255, 255, 255);
+  --color-text-accent: rgb(240, 156, 151);
   --color-bg-body: rgb(2, 58, 21);
   --color-hero-gradient: linear-gradient(rgba(2, 58, 21, 0.69), rgba(2, 58, 21, 0.69));
   --color-btn-hover: rgb(178, 195, 184);
-  --color-btn-active: rgb(240, 156, 151);
-  --color-btn-default: rgb(242, 116, 76);
+  --color-btn-default: rgb(240, 156, 151);
+  --color-btn-active: rgb(242, 116, 76);
   scroll-behavior: smooth;
 
   --bp-mobile: 480px;
