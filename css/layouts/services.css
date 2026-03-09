@@ -1,0 +1,222 @@
+/* =========================
+   SERVICES SECTION
+========================= */
+
+#services {
+  height: 100%;
+  position: relative;
+}
+
+/* ---------- CONTAINER ---------- */
+.container_services {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  width: 70%;
+  margin: 0 auto 1.2rem auto;
+  padding: 1.5rem 0 1.2rem 0;
+  justify-content: center;
+  text-wrap: balance;
+}
+
+.servicest_content {
+  display: flex;
+  justify-content: center;
+}
+
+.services_title {
+  display: flex;
+  flex: 0 0 30%;
+  justify-content: center;
+  align-content: center;
+  font-family: var(--text-secondary);
+  font-size: 1.6rem;
+  color: var(--color-text-dark);
+  text-wrap: balance;
+  margin-bottom: 2rem;
+}
+
+/* ---------- GRID ---------- */
+.services_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 4rem;
+}
+
+/* =========================
+   CARD
+========================= */
+.services_card {
+  position: relative;
+  height: 370px;
+  max-width: 400px;
+  perspective: 1200px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.services_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- CARD INNER / FLIP ---------- */
+.card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.card_toggle {
+  position: absolute;
+  left: -9999px;
+}
+
+.card_toggle:checked + .card_inner {
+  transform: rotateY(180deg);
+}
+
+/* ---------- CARD SIDES ---------- */
+.card_front,
+.card_back {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+/* ---------- FRONT ---------- */
+.card_front {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.card_media {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  transition: transform 0.6s ease;
+  height: 100%;
+  z-index: 0; /* overlay и картинка не перекрывают кнопку */
+}
+
+.services_card:hover .card_media {
+  transform: scale(1.15);
+}
+
+/* overlay поверх картинки */
+.card_front::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-grid-bg);
+  z-index: 0;
+}
+
+/* ---------- CARD CONTENT ---------- */
+.card_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  max-width: 60%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* ---------- BUTTON ---------- */
+.btn-grid {
+  width: fit-content;
+  z-index: 3;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.front-btn {
+  margin-bottom: 15px;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+/* ---------- BACK ---------- */
+.card_back {
+  background: var(--color-bg-body);
+  color: white;
+  transform: rotateY(180deg);
+  pointer-events: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 16px;
+  align-items: center;
+}
+
+/* ---------- CARD LIST ---------- */
+.card_list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.card_list li {
+  list-style-type: disc;
+}
+
+/* ---------- CARD TITLES ---------- */
+.card_title_container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.card_title {
+  font-family: var(--text-secondary);
+  font-size: 1.6rem;
+  color: var(--color-text-light);
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.services_list li:last-child .card_title {
+  max-width: 90%;
+}
+
+/* ---------- CARD MEDIA SPECIFIC ---------- */
+.card_media_accounting {
+  background-image: url('../../assets/01.webp');
+}
+
+.card_media_marketing {
+  background-image: url('../../assets/02.webp');
+}
+
+.card_media_support {
+  background-image: url('../../assets/03.webp');
+}
+
+.card_media_transport {
+  background-image: url('../../assets/04.webp');
+}
+
+.card_content,
+.btn-grid {
+  position: relative;
+  z-index: 3;
+}

@@ -36,8 +36,8 @@
         </ul>
       </nav>
     </header>
-    <section id="hero">
-      <div class="container_hero">
+    <section id="hero" class="section">
+      <div class="container_hero container_main">
         <h1 class="hero-title">САТ Логістик</h1>
         <h2 class="hero-subtitle">Комплексний аутсорсинг для бізнесу</h2>
         <p>
@@ -50,12 +50,168 @@
         </button>
       </div>
     </section>
-    <section id="about"></section>
-    <section id="services"></section>
-    <section id="benefits"></section>
-    <section id="reviews"></section>
-    <section id="promo-block"></section>
-    <section id="contact-form"></section>
+    <section id="about" class="section">
+      <div class="container_about container_main">
+        <div class="about_title">
+          <h3>Про компанію</h3>
+        </div>
+        <div class="about_content">
+          <div class="about_text">
+            <p>САТ Логістик — це аутсорсингові сервісні послуги для бізнесу.</p>
+            <p>Ми надаємо підтримку підприємствам у сферах:</p>
+            <ul class="about_list">
+              <li>організації та координації логістичних процесів</li>
+              <li>бухгалтерського та фінансового супроводу</li>
+              <li>операційного адміністрування</li>
+              <li>маркетингової підтримки</li>
+            </ul>
+            <p>
+              Наша роль — систематизувати процеси, зменшити навантаження на власника бізнесу та
+              забезпечити контроль виконання задач.
+            </p>
+          </div>
+          <div class="about_btn">
+            <button class="btn-primary" type="button">
+              <a href="#services">Послуги</a>
+            </button>
+            <button class="btn-secondary" type="button">
+              <a href="#contact-form">Контакты</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section">
+      <div class="container_services container_main">
+        <div class="services_title">
+          <h3>Наші послуги</h3>
+        </div>
+        <div class="services_content">
+          <ul class="services_list">
+            <li class="services_card">
+              <input type="checkbox" id="service1" class="card_toggle" />
+
+              <div class="card_inner">
+                <div class="card_front">
+                  <div class="card_media card_media_accounting"></div>
+
+                  <div class="card_content">
+                    <div class="card_title_container">
+                      <h4 class="card_title">Бухгалтерський облік</h4>
+                    </div>
+                    <label for="service1" class="btn-grid front-btn"> Детальніше </label>
+                  </div>
+                </div>
+
+                <div class="card_back">
+                  <ul class="card_list">
+                    <li>Ведення обліку та фінансової звітності</li>
+                    <li>Облік операцій і первинних документів</li>
+                    <li>Закриття періоду та звірки</li>
+                    <li>Звітність за погодженим форматом</li>
+                    <li>Супровід запитів і консультації</li>
+                  </ul>
+
+                  <label for="service1" class="btn-grid back-btn"> Назад </label>
+                </div>
+              </div>
+            </li>
+
+            <li class="services_card">
+              <input type="checkbox" id="service2" class="card_toggle" />
+
+              <div class="card_inner">
+                <div class="card_front">
+                  <div class="card_media card_media_marketing"></div>
+
+                  <div class="card_content">
+                    <div class="card_title_container">
+                      <h4 class="card_title">Маркетингова підтримка</h4>
+                    </div>
+
+                    <label for="service2" class="btn-grid front-btn"> Детальніше </label>
+                  </div>
+                </div>
+
+                <div class="card_back">
+                  <ul class="card_list">
+                    <li>Розробка маркетингової стратегії</li>
+                    <li>Аналіз ринку та конкурентів</li>
+                    <li>Планування рекламних кампаній</li>
+                    <li>Контроль ефективності маркетингу</li>
+                    <li>Консультації з розвитку бренду</li>
+                  </ul>
+
+                  <label for="service2" class="btn-grid"> Назад </label>
+                </div>
+              </div>
+            </li>
+            <li class="services_card">
+              <input type="checkbox" id="service3" class="card_toggle" />
+
+              <div class="card_inner">
+                <div class="card_front">
+                  <div class="card_media card_media_support"></div>
+
+                  <div class="card_content">
+                    <div class="card_title_container">
+                      <h4 class="card_title">Клієнтський сервіс</h4>
+                    </div>
+
+                    <label for="service3" class="btn-grid front-btn"> Детальніше </label>
+                  </div>
+                </div>
+
+                <div class="card_back">
+                  <ul class="card_list">
+                    <li>Обробка звернень клієнтів</li>
+                    <li>Консультації та підтримка</li>
+                    <li>Контроль якості обслуговування</li>
+                    <li>Ведення клієнтської бази</li>
+                    <li>Аналіз задоволеності клієнтів</li>
+                  </ul>
+
+                  <label for="service3" class="btn-grid"> Назад </label>
+                </div>
+              </div>
+            </li>
+            <li class="services_card">
+              <input type="checkbox" id="service4" class="card_toggle" />
+
+              <div class="card_inner">
+                <div class="card_front">
+                  <div class="card_media card_media_transport"></div>
+
+                  <div class="card_content">
+                    <div class="card_title_container">
+                      <h4 class="card_title">Транспортно-експедиторські послуги</h4>
+                    </div>
+
+                    <label for="service4" class="btn-grid front-btn"> Детальніше </label>
+                  </div>
+                </div>
+
+                <div class="card_back">
+                  <ul class="card_list">
+                    <li>Організація перевезень</li>
+                    <li>Координація логістичних процесів</li>
+                    <li>Контроль доставки вантажів</li>
+                    <li>Оптимізація маршрутів</li>
+                    <li>Документальний супровід перевезень</li>
+                  </ul>
+
+                  <label for="service4" class="btn-grid"> Назад </label>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="benefits" class="section"></section>
+    <section id="reviews" class="section"></section>
+    <section id="promo-block" class="section"></section>
+    <section id="contact-form" class="section"></section>
     <footer></footer>
   </body>
 </html>
