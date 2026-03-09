@@ -12,9 +12,16 @@
   left: 0;
   animation: scroll-transition;
   animation-timeline: scroll(y);
+  z-index: 999;
+  animation: scroll-transition linear forwards;
+  animation-timeline: scroll(root);
+  animation-range: 0 100vh;
 }
 
 @keyframes scroll-transition {
+  from {
+    background-color: transparent;
+  }
   to {
     background-color: var(--color-bg-body);
   }
@@ -26,8 +33,9 @@
   -webkit-box-align: center;
   z-index: 19;
   margin: 0px 10px;
-
-  @media screen and (max-width: bp-tablet) {
+}
+@media screen and (max-width: 768px) {
+  .header__nav {
     flex-basis: 50%;
   }
 }
@@ -36,8 +44,9 @@
   display: flex;
   padding-bottom: 9px;
   gap: 20px;
-
-  @media screen and (max-width: bp-tablet) {
+}
+@media screen and (max-width: 768px) {
+  .header__link-list {
     display: none;
   }
 }

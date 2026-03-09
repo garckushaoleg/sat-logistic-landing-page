@@ -67,6 +67,18 @@ h6 {
   text-wrap: balance;
 }
 
+h1 {
+  font-family: var(--text-primary);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--text-secondary);
+}
+
 /*
   10. Create a root stacking context
 */
@@ -87,6 +99,7 @@ li {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: var(--text-secondary);
 }
 
 button {
@@ -97,4 +110,30 @@ button {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+.container_main {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+@media screen and (max-width: 768px) {
+  .container_main {
+    max-width: 743px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container_main {
+    max-width: 400px;
+  }
+}
+
+.section {
+  padding: 48px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 20px 0;
+  }
 }
