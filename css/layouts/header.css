@@ -34,6 +34,23 @@
   z-index: 19;
   margin: 0px 10px;
 }
+
+.header__link-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.header__link {
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header__nav {
     position: fixed;
@@ -50,19 +67,7 @@
   }
 
   .header__link-list {
-    display: flex;
     flex-direction: column;
-    gap: 25px;
     padding: 3rem 0 0 3rem;
-  }
-
-  .header__link {
-    color: var(--color-text-light);
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-
-    &:hover {
-      opacity: 0.6;
-    }
   }
 }
