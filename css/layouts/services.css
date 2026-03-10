@@ -11,6 +11,7 @@
 .container_services {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-weight: 400;
   width: 70%;
   margin: 0 auto 1.2rem auto;
@@ -41,6 +42,18 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem 4rem;
+}
+
+@media screen and (max-width: 940px) {
+  .services_list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services_list {
+    gap: 1 rem;
+  }
 }
 
 /* =========================

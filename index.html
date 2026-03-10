@@ -14,11 +14,16 @@
   </head>
   <body>
     <header class="header">
-      <div class="burger-menu" id="burger">
+      <input type="checkbox" id="burger-toggle" class="burger-toggle" />
+
+      <label for="burger-toggle" class="burger-menu">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </label>
+
+      <div class="menu-overlay"></div>
+
       <nav class="header__nav">
         <ul class="header__link-list">
           <li class="header__link">
@@ -217,5 +222,7 @@
     <section id="promo-block" class="section"></section>
     <section id="contact-form" class="section"></section>
     <footer></footer>
+
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>
