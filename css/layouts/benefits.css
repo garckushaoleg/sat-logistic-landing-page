@@ -1,5 +1,6 @@
 #benefits {
   height: 100%;
+  padding-bottom: 2rem;
 }
 
 .container_benefits {
@@ -84,4 +85,24 @@
   font-weight: 600;
   font-size: 1.2rem;
   color: var(--color-text-dark);
+}
+
+@media screen and (max-width: 1300px) {
+  .benefits_line {
+    animation: scroll 20s linear infinite;
+  }
+}
+@media screen and (max-width: 768px) {
+  #benefits.section {
+    padding-top: 0;
+  }
+
+  .benefits_content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .benefits_line {
+    animation: scroll 25s linear infinite;
+  }
 }
