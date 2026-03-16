@@ -1,0 +1,56 @@
+#promo-block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background:
+    var(--color-hero-gradient),
+    url(../../assets/hero-img.webp) center center / cover no-repeat;
+  background-attachment: fixed;
+}
+
+.container_promo-block {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text-light);
+  text-align: center;
+  font-weight: 400;
+  text-wrap: balance;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.promo-block-subtitle {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-accent);
+  font-family: var(--text-secondary);
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.container_promo-block p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #promo-block {
+    height: auto;
+  }
+
+  .container_promo-block {
+    width: 100%;
+  }
+
+  .promo-block-subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .promo-block-subtitle {
+    font-size: 1.2rem;
+  }
+}
