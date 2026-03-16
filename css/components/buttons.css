@@ -4,6 +4,7 @@
   background-color: var(--color-btn-default);
   padding: 10px 20px;
   font-size: 1.2rem;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-btn-active);
@@ -17,6 +18,7 @@
   border: 1px solid var(--color-text-light);
   padding: 10px 20px;
   font-size: 1.2rem;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-btn-hover);
@@ -29,6 +31,7 @@
   background-color: var(--color-btn-grid);
   padding: 10px 20px;
   font-size: 1.2rem;
+  cursor: pointer;
 
   &:hover {
     color: var(--color-text-light);
