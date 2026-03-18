@@ -34,13 +34,30 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  text-wrap: balance;
+}
+
+.circle-content p {
+  width: 250px;
+  text-align: center;
 }
 
 .circle {
   border-radius: 50%;
-  background-color: var(--color-text-dark);
   height: 180px;
   width: 180px;
+}
+
+.circle1 {
+  background: url(../../assets/circle1.png) center center / cover no-repeat;
+}
+
+.circle2 {
+  background: url(../../assets/circle2.png) center center / cover no-repeat;
+}
+
+.circle3 {
+  background: url(../../assets/circle3.png) center center / cover no-repeat;
 }
 
 .benefits_line-wrapper {

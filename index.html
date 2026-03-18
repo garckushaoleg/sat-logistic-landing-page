@@ -4,16 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sat Logistic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header section">
       <input type="checkbox" id="burger-toggle" class="burger-toggle" />
 
       <label for="burger-toggle" class="burger-menu">
@@ -224,16 +218,16 @@
         </div>
         <div class="benefits_content">
           <div class="circle-content">
-            <div class="circle"></div>
-            <span>text</span>
+            <div class="circle circle1"></div>
+            <p>Комплексний підхід замість набору підрядників</p>
           </div>
           <div class="circle-content">
-            <div class="circle"></div>
-            <span>text</span>
+            <div class="circle circle2"></div>
+            <p>Один план робіт і один контроль.</p>
           </div>
           <div class="circle-content">
-            <div class="circle"></div>
-            <span>text</span>
+            <div class="circle circle3"></div>
+            <p>Прозорі строки, статуси, звіти</p>
           </div>
         </div>
         <div class="benefits_line-wrapper">
@@ -350,7 +344,7 @@
 
             <div class="review_person">
               <div class="review_person-name">Ангеліна К.</div>
-              <div class="review_person-img">Photo 1</div>
+              <div class="review_person-img img1"></div>
             </div>
           </div>
 
@@ -385,7 +379,7 @@
 
             <div class="review_person">
               <div class="review_person-name">Андрій Б.</div>
-              <div class="review_person-img">Photo 2</div>
+              <div class="review_person-img img2"></div>
             </div>
           </div>
         </div>
@@ -460,15 +454,37 @@
                 name="user-text"
                 id="text"
                 placeholder="Текст"
+                required
               ></textarea>
             </div>
 
             <button type="submit" class="btn-primary">Відправити</button>
           </form>
         </div>
+
+        <input type="checkbox" id="modal-toggle" class="modal-toggle" />
+
+        <div class="modal_wrapper">
+          <div class="modal_overlay"></div>
+          <div class="modal_content">
+            <div class="modal-success-msg">
+              <p>Дякуємо! 💛</p>
+              <p>
+                Ваше повідомлення успішно надіслано. Наша команда зв’яжеться з вами найближчим
+                часом.
+              </p>
+            </div>
+            <p class="modal-error-msg" style="display: none; text-align: center"></p>
+
+            <label for="modal-toggle" class="modal-close">
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+        </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer section">
       <nav class="footer__nav">
         <ul class="footer__link-list">
           <li class="footer__link">
@@ -490,5 +506,6 @@
     </footer>
 
     <script src="./js/burger-menu.js"></script>
+    <script src="./js/post-form.js"></script>
   </body>
 </html>
