@@ -73,6 +73,20 @@
   color: var(--color-text-dark);
 }
 
+.img1,
+.img2 {
+  width: 3rem;
+  height: 3rem;
+}
+
+.img1 {
+  background: url(../../assets/review1.webp) center center / cover no-repeat;
+}
+
+.img2 {
+  background: url(../../assets/review2.webp) center center / cover no-repeat;
+}
+
 @media screen and (max-width: 768px) {
   .reviews_content {
     flex-direction: column;

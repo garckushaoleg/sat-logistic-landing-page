@@ -56,13 +56,14 @@ input {
 
 .form-field {
   position: relative;
+  font-family: var(--text-secondary);
 }
 
 .form-field:last-of-type {
   margin-bottom: 5rem;
 }
 
-.form-field:nth-child(-n + 2)::after {
+.form-field::after {
   content: '*';
   position: absolute;
   right: 2rem;

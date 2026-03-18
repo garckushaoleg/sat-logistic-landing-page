@@ -3,6 +3,7 @@
 @import './_fonts.css';
 @import './components/buttons.css';
 @import './components/burger-menu.css';
+@import './components/modal.css';
 @import './layouts/header.css';
 @import './layouts/hero.css';
 @import './layouts/about.css';
