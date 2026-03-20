@@ -45,17 +45,3 @@ form.addEventListener('submit', async (e) => {
     modalToggle.checked = true;
   }
 });
-
-// function showModalError(text) {
-//   const toggle = document.getElementById('modal-toggle');
-//   const success = document.querySelector('.modal-success-msg');
-//   const error = document.querySelector('.modal-error-msg');
-
-//   success.style.display = 'none';
-//   error.style.display = 'block';
-//   error.textContent = text;
-
-//   toggle.checked = true;
-// }
-
-// showModalError('Форма не надіслана. Спробуйте пізніше.');

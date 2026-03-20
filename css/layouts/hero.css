@@ -2,7 +2,7 @@
   width: 100%;
   background:
     var(--color-hero-gradient),
-    url(../../assets/old.webp) center center / cover no-repeat;
+    url(../../assets/hero-img.webp) center center / cover no-repeat;
   background-attachment: fixed;
 }
 
