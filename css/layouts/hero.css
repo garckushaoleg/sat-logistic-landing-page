@@ -1,19 +1,21 @@
 #hero {
   width: 100%;
+  min-height: 55vh;
   background:
     var(--color-hero-gradient),
-    url(../../assets/hero-img.webp) center center / cover no-repeat;
+    url(../../assets/hero-img.webp) center 90% / cover no-repeat;
   background-attachment: fixed;
 }
 
 .container_hero {
+  display: flex;
   color: var(--color-text-light);
   text-align: center;
   font-weight: 400;
   text-wrap: balance;
   width: 50%;
   margin: 0 auto;
-  padding-top: 6rem;
+  padding-top: 15vh;
   padding-bottom: 1.2rem;
 
   & button {
@@ -27,9 +29,10 @@
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1430px) {
   .container_hero {
-    width: 80%;
+    width: 70%;
+    padding-top: 12vh;
   }
 }
 @media screen and (max-width: 940px) {
@@ -50,6 +53,12 @@
   .container_hero button {
     width: auto;
   }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -76,13 +85,13 @@
 .hero-subtitle {
   font-family: var(--text-secondary);
   color: var(--color-text-accent);
-  font-size: 2rem;
+  font-size: 3.5rem;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {

@@ -255,9 +255,9 @@
   word-wrap: break-word;
 }
 
-.services_list li:last-child .card_title {
+/* .services_list li:last-child .card_title {
   max-width: 90%;
-}
+} */
 
 @media screen and (max-width: 480px) {
   .services_list li:last-child .card_title {

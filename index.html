@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sat Logistic</title>
+    <link rel="icon" type="image/png" href="./assets/САТ_1_1.png" sizes="32x32" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header section">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="./assets/САТ_1_1.png" alt="САТ Логістик" />
+        </a>
+      </div>
+
       <input type="checkbox" id="burger-toggle" class="burger-toggle" />
 
       <label for="burger-toggle" class="burger-menu">
@@ -37,16 +44,18 @@
     </header>
     <section id="hero" class="section">
       <div class="container_hero container_main">
-        <h1 class="hero-title">САТ Логістик</h1>
-        <h2 class="hero-subtitle">Комплексний аутсорсинг для бізнесу</h2>
-        <p>
-          Організація процесів, супровід та координація під ключ <br />
-          Ми допомагаємо компаніям зосередитись на розвитку, беручи на себе операційні,
-          адміністративні та координаційні задачі.
-        </p>
-        <button class="btn-primary" type="button">
-          <a href="#contact-form">Отримати консультацію</a>
-        </button>
+        <div class="hero__wrapper">
+          <!-- <h1 class="hero-title">САТ Логістик</h1> -->
+          <h2 class="hero-subtitle">Комплексний аутсорсинг для бізнесу</h2>
+          <p>
+            Організація процесів, супровід та координація під ключ <br />
+            Ми допомагаємо компаніям зосередитись на розвитку, беручи на себе операційні,
+            адміністративні та координаційні задачі.
+          </p>
+          <button class="btn-primary" type="button">
+            <a href="#contact-form">Отримати консультацію</a>
+          </button>
+        </div>
       </div>
     </section>
     <section id="about" class="section">
@@ -56,8 +65,11 @@
         </div>
         <div class="about_content">
           <div class="about_text">
-            <p>САТ Логістик — це аутсорсингові сервісні послуги для бізнесу.</p>
-            <p>Ми надаємо підтримку підприємствам у сферах:</p>
+            <p>
+              <span class="color-text-accent">САТ Логістик</span> — це аутсорсингові сервісні
+              послуги для бізнесу.
+            </p>
+            <p class="color-text-accent">Ми надаємо підтримку підприємствам у сферах:</p>
             <ul class="about_list">
               <li>організації та координації логістичних процесів</li>
               <li>бухгалтерського та фінансового супроводу</li>
@@ -65,8 +77,8 @@
               <li>маркетингової підтримки</li>
             </ul>
             <p>
-              Наша роль — систематизувати процеси, зменшити навантаження на власника бізнесу та
-              забезпечити контроль виконання задач.
+              <span class="color-text-accent">Наша роль</span> — систематизувати процеси, зменшити
+              навантаження на власника бізнесу та забезпечити контроль виконання задач.
             </p>
           </div>
           <div class="about_btn">
@@ -223,7 +235,7 @@
           </div>
           <div class="circle-content">
             <div class="circle circle2"></div>
-            <p>Один план робіт і один контроль.</p>
+            <p>Один план робіт і один контроль</p>
           </div>
           <div class="circle-content">
             <div class="circle circle3"></div>
