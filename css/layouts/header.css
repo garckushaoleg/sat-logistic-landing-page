@@ -36,7 +36,6 @@
 .header__logo a {
   display: flex;
   height: inherit;
-  margin: 1rem 1rem;
 }
 
 .header__nav {
@@ -65,7 +64,7 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .header__nav {
