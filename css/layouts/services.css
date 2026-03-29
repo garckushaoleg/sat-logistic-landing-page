@@ -64,10 +64,6 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 
-  .services_card.flipped ~ .services_list {
-    gap: 7rem;
-  }
-
   .card_back {
     padding-bottom: 7rem;
   }
@@ -141,6 +137,12 @@
 
 .card_toggle:checked + .card_inner {
   transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1200px) {
+  .services_card:has(.card_toggle:checked) {
+    min-height: 500px;
+  }
 }
 
 /* ---------- CARD SIDES ---------- */
@@ -282,10 +284,6 @@
   margin: 0;
   word-wrap: break-word;
 }
-
-/* .services_list li:last-child .card_title {
-  max-width: 90%;
-} */
 
 @media screen and (max-width: 480px) {
   .services_list li:last-child .card_title {

@@ -16,14 +16,15 @@
   display: flex;
   flex: 0 0 30%;
   justify-content: center;
+  text-align: center;
 
-  & h3 {
+  h3 {
     font-family: var(--text-secondary);
     font-size: 1.6rem;
     color: var(--color-text-light);
   }
 
-  & p {
+  p {
     font-family: var(--text-secondary);
     font-size: 1.2rem;
     color: var(--color-text-light);
@@ -31,12 +32,18 @@
   }
 }
 
+.reviews_slider {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
 .reviews_content {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  overflow: visible;
 }
 
 .review_card {
@@ -44,7 +51,10 @@
   flex-direction: column;
   background-color: white;
   padding: 2rem;
-  flex: 1;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
 }
 
 .review_icon {
@@ -75,28 +85,69 @@
 }
 
 .img1,
-.img2 {
+.img2,
+.img3,
+.img4,
+.img5 {
   width: 3rem;
   height: 3rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .img1 {
-  background: url(../../assets/review1.webp) center center / cover no-repeat;
+  background-image: url(../../assets/review1.webp);
+}
+.img2 {
+  background-image: url(../../assets/review2.webp);
+}
+.img3 {
+  background-image: url(../../assets/review3.webp);
+}
+.img4 {
+  background-image: url(../../assets/review4.webp);
+}
+.img5 {
+  background-image: url(../../assets/review5.webp);
 }
 
-.img2 {
-  background: url(../../assets/review2.webp) center center / cover no-repeat;
+@media screen and (max-width: 1200px) {
+  .reviews_slider {
+    width: 80%;
+    max-width: 80%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .reviews_content {
-    flex-direction: column;
-  }
-
-  .reviews_title p {
-    text-align: center;
+  .review_card {
+    max-width: 100%;
   }
 }
 
-@media screen and (max-width: 480px) {
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.reviews_slider .swiper-button-prev,
+.reviews_slider .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 100;
+}
+
+.reviews_slider .swiper-button-prev {
+  left: -3rem;
+}
+.reviews_slider .swiper-button-next {
+  right: -3rem;
 }
