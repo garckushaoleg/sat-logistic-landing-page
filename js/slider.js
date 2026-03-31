@@ -1,5 +1,7 @@
 const swiper = new Swiper('.reviews_content', {
   slidesPerView: 2,
+  loop: true,
+  autoHeight: true,
   spaceBetween: 20,
   navigation: {
     nextEl: '.swiper-button-next',

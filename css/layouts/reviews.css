@@ -61,6 +61,10 @@
   margin-bottom: 1.5rem;
 }
 
+.review_text {
+  min-height: 15rem;
+}
+
 .review_text p {
   font-size: 1.1rem;
   font-family: var(--text-secondary);
