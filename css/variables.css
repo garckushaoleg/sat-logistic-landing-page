@@ -4,6 +4,7 @@
   --color-text-accent: rgb(240, 156, 151);
   --color-bg-body: rgb(2, 58, 21);
   --color-hero-gradient: linear-gradient(rgba(2, 58, 21, 0.69), rgba(2, 58, 21, 0.69));
+  --color-promo-gradient: linear-gradient(rgba(2, 58, 21, 0.9), rgba(2, 58, 21, 0.75));
   --color-grid-bg: rgba(240, 156, 151, 0.5);
   --color-btn-hover: rgb(178, 195, 184);
   --color-btn-grid: rgba(255, 255, 255, 0.7);
@@ -18,4 +19,5 @@
 
 .color-text-accent {
   color: var(--color-text-accent);
+  font-weight: 700;
 }

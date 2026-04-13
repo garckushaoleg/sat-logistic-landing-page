@@ -40,6 +40,9 @@
 .circle-content p {
   width: 250px;
   text-align: center;
+  text-wrap: balance;
+  font-weight: 700;
+  color: var(--color-text-dark);
 }
 
 .circle {
