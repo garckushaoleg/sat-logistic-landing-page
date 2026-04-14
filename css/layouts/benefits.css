@@ -15,12 +15,10 @@
   flex: 0 0 30%;
   justify-content: center;
   margin-bottom: 2rem;
-
-  & h3 {
-    font-family: var(--text-secondary);
-    font-size: 1.6rem;
-    color: var(--color-text-dark);
-  }
+  text-wrap: balance;
+  font-family: var(--text-secondary);
+  font-size: 1.6rem;
+  color: var(--color-text-dark);
 }
 
 .benefits_content {

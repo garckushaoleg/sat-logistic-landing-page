@@ -17,12 +17,10 @@
   flex: 0 0 30%;
   justify-content: center;
   text-align: center;
-
-  h3 {
-    font-family: var(--text-secondary);
-    font-size: 1.6rem;
-    color: var(--color-text-light);
-  }
+  text-wrap: balance;
+  font-family: var(--text-secondary);
+  font-size: 1.6rem;
+  color: var(--color-text-light);
 
   p {
     font-family: var(--text-secondary);
