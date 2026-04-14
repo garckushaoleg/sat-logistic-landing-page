@@ -36,7 +36,7 @@
   font-size: 1.2rem;
 }
 
-.container_promo-block h3 {
+.promo-block-cta {
   margin-top: 5rem;
   font-size: 1.5rem;
 }
@@ -50,12 +50,14 @@
     width: 100%;
   }
 
-  .promo-block-subtitle {
+  .promo-block-subtitle,
+  .promo-block-cta {
     font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .promo-block-subtitle {
+  .promo-block-subtitle,
+  .promo-block-cta {
     font-size: 1.2rem;
   }
 }
@@ -78,7 +80,6 @@
   animation: arrowBlink 1.5s infinite;
 }
 
-/* задержка для эффекта "волны" */
 .scroll-indicator span:nth-child(1) {
   animation-delay: 0s;
 }

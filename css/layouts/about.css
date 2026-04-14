@@ -71,6 +71,11 @@
   }
 }
 
+.about_btn a {
+  width: 28%;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .container_about {
     flex-direction: column;
@@ -93,6 +98,10 @@
 
   .about_btn {
     justify-content: center;
+  }
+
+  .about_btn a {
+    width: 100%;
   }
 }
 
