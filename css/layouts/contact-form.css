@@ -124,11 +124,16 @@ form button {
 
 @media screen and (max-width: 768px) {
   .container_contact-form {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     padding: 0;
-    gap: 4rem;
+    gap: 0;
+  }
+
+  .content-wrapper {
+    flex-direction: column-reverse;
   }
 }
+
 @media screen and (max-width: 480px) {
   .decoration-line {
     width: 100%;
