@@ -21,3 +21,7 @@
   color: var(--color-text-accent);
   font-weight: 700;
 }
+
+.color-text-accent-white {
+  color: var(--color-text-light);
+}
