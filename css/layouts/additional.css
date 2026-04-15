@@ -1,0 +1,39 @@
+#additional {
+  background: var(--color-grid-bg);
+  margin-bottom: 3.5rem;
+}
+
+.container_additional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: min(900px, 100% - 4rem);
+  margin: 0 auto;
+
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.additional_title {
+  display: flex;
+  flex: 0 0 30%;
+  justify-content: center;
+  align-content: center;
+  font-family: var(--text-secondary);
+  font-size: 1.6rem;
+  color: var(--color-text-dark);
+  text-wrap: balance;
+  margin-bottom: 2rem;
+}
+
+.additional_title {
+  margin-top: 2rem;
+}
+
+.additional_content a {
+  background-color: var(--color-bg-body);
+  border: none;
+  font-weight: 700;
+}

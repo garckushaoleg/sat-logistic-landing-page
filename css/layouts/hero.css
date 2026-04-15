@@ -13,34 +13,43 @@
   text-align: center;
   font-weight: 400;
   text-wrap: balance;
-  width: 50%;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 15vh;
   padding-bottom: 1.2rem;
+  justify-content: center;
 
   & .btn-primary {
     width: 80%;
+    font-weight: 700;
   }
 
   & p {
-    width: 80%;
-    margin: 0 auto;
+    /* width: 80%;
+    margin: 0 auto; */
     margin-bottom: 3rem;
     font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 1430px) {
   .container_hero {
-    width: 70%;
+    /* width: 70%; */
     padding-top: 12vh;
   }
 }
 @media screen and (max-width: 940px) {
-  .container_hero {
+  /* .container_hero {
     width: 100%;
-  }
+  } */
 }
 @media screen and (max-width: 768px) {
+  .container_hero {
+    max-width: 700px;
+    justify-content: center;
+  }
   .container_hero p {
     font-size: 1rem;
   }
@@ -59,9 +68,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50vw;
 }
+@media screen and (max-width: 768px) {
+  .hero__wrapper {
+    width: 100%;
+  }
+}
+/* @media screen and (max-width: 700px) {
+  .hero__wrapper {
+    width: 50vw;
+  }
+} */
 
-.hero-title {
+/* .hero-title {
   font-family: var(--text-primary);
   color: var(--color-text-light);
   text-align: center;
@@ -80,12 +100,12 @@
   .hero-title {
     font-size: 2rem;
   }
-}
+} */
 
 .hero-subtitle {
   font-family: var(--text-secondary);
   color: var(--color-text-accent);
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   line-height: 1.2;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -98,5 +118,52 @@
 @media screen and (max-width: 480px) {
   .hero-subtitle {
     font-size: 2rem;
+  }
+}
+
+.hero-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 1.2rem; */
+  max-width: 1100px;
+}
+
+@media screen and (max-width: 1860px) {
+  .hero-text {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    max-width: 600px;
+    gap: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-text {
+    max-width: 400px;
+  }
+}
+
+.hero-text p {
+  text-align: left;
+  text-wrap: balance;
+}
+
+.hero-text p:nth-child(1) {
+  padding-left: 2rem;
+}
+
+.hero-text p:nth-child(2) {
+  padding-left: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .hero-text p:nth-child(1) {
+    padding-left: 2.2rem;
+  }
+
+  .hero-text p:nth-child(2) {
+    padding-left: 1rem;
   }
 }

@@ -20,13 +20,12 @@
   text-wrap: balance;
 }
 
-.servicest_content {
+.services_content {
   display: flex;
   justify-content: center;
 }
 
-.services_title,
-.services_cta-title {
+.services_title {
   display: flex;
   flex: 0 0 30%;
   justify-content: center;
@@ -36,10 +35,6 @@
   color: var(--color-text-dark);
   text-wrap: balance;
   margin-bottom: 2rem;
-}
-
-.services_cta-title {
-  margin-top: 2rem;
 }
 
 /* ---------- GRID ---------- */
