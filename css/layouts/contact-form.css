@@ -120,6 +120,7 @@ textarea.form-input {
 form button {
   width: 30%;
   min-width: max-content;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -152,7 +153,7 @@ form button {
   }
 }
 
-.scroll-indicator {
+/* .scroll-indicator {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -193,4 +194,4 @@ form button {
     opacity: 0;
     transform: rotate(45deg) translate(8px, 8px);
   }
-}
+} */
