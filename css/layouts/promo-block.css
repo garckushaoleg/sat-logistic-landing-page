@@ -53,4 +53,8 @@
   .promo-block-subtitle {
     font-size: 1.2rem;
   }
+
+  #promo-block {
+    height: 20vh;
+  }
 }
